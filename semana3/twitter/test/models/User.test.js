@@ -21,4 +21,13 @@ describe("Unit tests for User class", () => {
         expect(user.getLasUpdate).not.toBeUndefined()
     })
 
+    test('Ad setters', () => {
+        const user = new User(1, "javierrgg", "Javi", "Bio")
+        user.setUsername ="Javier"
+        expect(user.username).toBe("Javier")
+
+        user.setBio = "New bio"
+        expect(user.bio).toBe("New bio")
+    })
+
 })
